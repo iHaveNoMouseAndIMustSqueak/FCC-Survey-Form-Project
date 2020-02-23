@@ -1,0 +1,113 @@
+/* Variables */
+:root {
+    --rounded-corners: 4px;
+    --white: #fcfcfc;
+    --key-colour: rgb(61, 61, 61);
+    --green-active: rgb(96, 189, 96);
+    --green-inactive: rgba(96, 189, 96, 0.85);
+}
+
+/* Makes padding and borders make more sense */
+*, *:before, *:after {
+    box-sizing: border-box; 
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background: #ccc;
+    color: var(--white);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    margin-top: .5em;
+    margin-bottom: 0;
+    line-height: 1.2;
+    font-size: 3.5em;
+}
+
+label, input {
+    display: block;
+    font-size: 1.25em;
+}
+
+label[for] {
+    font-size: 1.5em;
+    margin-bottom: .2em;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: .25ch .5ch .5ch .5ch;
+    border-radius: var(--rounded-corners);
+    border-width: 0;
+    line-height: 1.5;
+}
+
+input[type='radio'], input[type='checkbox'] {
+    display: inline;
+    margin-right: .5ch;
+    width: 1.5rem; /* VSC says these properties are ignored, but that doesn't seem to be the case */
+    height: 1.5rem; /* VSC says these properties are ignored, but that doesn't seem to be the case */
+}
+
+textarea {
+    min-height: 7em;
+    resize: vertical;
+}
+
+header {
+    text-align: center;
+    color: var(--key-colour);
+}
+
+header p {
+    margin-top: 0;
+    font-size: 1.25em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    flex: 0 1 100ch;
+    background: var(--key-colour);
+    padding: 1.5em 2.5em 2em 2.5em;
+    margin-bottom: 3em;
+    border-radius: var(--rounded-corners);
+}
+
+form section {
+    margin-bottom: 1em;
+}
+
+button {
+    font-size: 1.25em;
+    line-height: 1.75;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button[type='submit'] {
+    background: var(--green-inactive);
+    color: var(--white);
+    transition: 300ms;
+}
+
+button[type='submit']:hover {
+    background: var(--green-active);
+}
+
+.small-text {
+    font-size: 0.8em;
+    opacity: 0.9;
+}

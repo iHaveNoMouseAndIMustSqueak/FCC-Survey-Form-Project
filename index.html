@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>FCC Survey Form Project</title>
+        <link rel='stylesheet' type='text/css' href='/node_modules/normalize.css/normalize.css'>
+        <link rel='stylesheet' type='text/css' href='main.css'>
+    </head>
+    <body>
+        <header>
+            <h1 id='title'>Title</h1> <!--User Story #1-->
+            <p id='description'>Short description of the form.</p> <!--User Story #2-->
+        </header>
+        <main>
+            <form id='survey-form' action='#' method='POST'> <!--User Story #3--> <!--Obviously nothing happens when pressing submit, except an error-->
+                <section>
+                    <label for='name' id='name-label'>Name</label> <!--User Story #10-->
+                    <input id='name' name='name' type="text" placeholder="Enter your name" required> <!--User Story #4--> <!--User Story #11 is placeholder text-->
+                </section>
+                <section>
+                    <label for='email' id='email-label'>Email</label> <!--User Story #10-->
+                    <input id='email' name='email' type="email" placeholder="you@example.com" required> <!--User Story #5 and #6-->
+                </section>
+                <section>
+                    <label for='number' id='number-label'>Age <span class='small-text'>(optional)</span></label> <!--User Story #10-->
+                    <input id='number' name='age' type="number" min='13' max='123' placeholder="Age"> <!--User Story #7, #8 and #9-->
+                </section>
+                <section>
+                    <label for='dropdown'>Dropdown label</label>
+                    <select id='dropdown' name='dropdown'> <!--User Story #12-->
+                        <option disabled selected value>Select an option</option>
+                        <option value="option-one">Option 1</option>
+                        <option value="option-two">Option 2</option>
+                        <option value="option-three">Option 3</option>
+                    </select>
+                </section>
+                <section>
+                    <label for='radio'>Radio buttons label</label> <!--User Story #13-->
+                    <label><input name='radio' type="radio" value='first' checked>First option</label>
+                    <label><input name='radio' type="radio" value='second'>Second option</label>
+                    <label><input name='radio' type="radio" value='third'>Third option</label>
+                    <label><input name='radio' type="radio" value='N/A'>Not applicable</label>
+                </section>
+                <section>
+                    <label for='checkbox'>Checkbox buttons label <span class='small-text'>(check all that apply)</span></label> <!--User Story #14-->
+                    <label><input name='checkbox' type="checkbox" value='first'>First option</label>
+                    <label><input name='checkbox' type="checkbox" value='second'>Second option</label>
+                    <label><input name='checkbox' type="checkbox" value='third'>Third option</label>
+                    <label><input name='checkbox' type="checkbox" value='fourth'>Fourth option</label>
+                    <label><input name='checkbox' type="checkbox" value='fifth'>Fifth option</label>
+                </section>
+                <section>
+                    <label for='textarea'>Text area label <span class='small-text'>(optional)</span></label>
+                    <textarea name='textarea' placeholder="Enter your comment here"></textarea> <!--User Story #15-->
+                </section>
+                <button id='submit' type="submit">Submit</button> <!--User Story #16-->
+            </form>
+        </main>
+    </body>
+</html>
