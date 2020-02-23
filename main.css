@@ -50,10 +50,10 @@ input, select, textarea, button {
 }
 
 input[type='radio'], input[type='checkbox'] {
-    display: inline;
+    display: inline-block;
     margin-right: .5ch;
-    width: 1.5rem; /* VSC says these properties are ignored, but that doesn't seem to be the case */
-    height: 1.5rem; /* VSC says these properties are ignored, but that doesn't seem to be the case */
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 textarea {
